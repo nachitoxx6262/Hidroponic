@@ -47,7 +47,7 @@ const Hidroponic = ()=>{
         <Typography color="white" variant="h5" textAlign="center" style={{ fontFamily: 'Poiret One' }} component="h2">
           {'Fusionamos la agricultura con la innovación moderna para llevar hasta tu mesa la frescura y el sabor más auténtico.'}
         </Typography>
-        <img src=".\src\fondo.svg" width="100%" alt="Fondo" />
+        <img src=".\src\fondo.png" width="100%" alt="Fondo" />
   
         <Typography color="white" variant="h4" component="h1" textAlign="center" style={{ fontFamily: 'Architects Daughter' }} gutterBottom>
           Temperatura y Humedad dentro del invernadero
