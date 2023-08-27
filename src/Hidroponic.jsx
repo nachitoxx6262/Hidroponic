@@ -40,13 +40,67 @@ const Hidroponic = ()=>{
       }}
     >
       <Container component="main" sx={{ marginTop: "20px", display: 'flex', flexDirection: "column", alignItems: "center" }} maxWidth="sm">
-        <Typography color="white" variant="h3" component="h1" style={{ fontFamily: 'Architects Daughter' }} gutterBottom>
-          El Asturiano Hidroponia
-        </Typography>
-        <Typography color="white" variant="h5" textAlign="center" style={{ fontFamily: 'Poiret One' }} component="h2">
-          {'Fusionamos la agricultura con la innovación moderna para llevar hasta tu mesa la frescura y el sabor más auténtico.'}
-        </Typography>
-        <img src="https://i.imgur.com/UsbbtIo.png" width="100%" alt="Fondo" />
+
+
+      <Box
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+      sx={{
+        backgroundImage: `url('./src/background.jpg')`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        maxWidth: "100vw",
+        width: "100vw",
+        height: "400px",
+        position: "relative",
+      }}
+    >
+      {/* Transparencia verde sobre la imagen */}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          backgroundColor: "rgba(2, 74, 0, 0.4)",
+        }}
+      />
+
+      <Typography
+        color="white"
+        variant="h3"
+        component="h1"
+        sx={{
+          fontFamily: "Signika Negative",
+          position: "relative", // Mantener las letras por encima de la transparencia
+          zIndex: 1, // Colocar las letras por encima de la transparencia
+          fontWeight:"700"
+        }}
+        gutterBottom
+      >
+        El Asturiano Hidroponia
+      </Typography>
+      <Typography
+        color="white"
+        variant="h6"
+        textAlign="center"
+        sx={{
+          fontFamily: "Signika Negative",
+          position: "relative", // Mantener las letras por encima de la transparencia
+          zIndex: 1, // Colocar las letras por encima de la transparencia
+        }}
+        component="h2"
+      >
+        {
+          "Fusionamos la agricultura con la innovación moderna para llevar hasta tu mesa la frescura y el sabor más auténtico."
+        }
+      </Typography>
+    </Box>
+
   
         <Typography color="white" variant="h4" component="h1" textAlign="center" style={{ fontFamily: 'Architects Daughter' }} gutterBottom>
           Temperatura y Humedad dentro del invernadero

@@ -29,12 +29,13 @@ function NavigationBar() {
   };
 
   return (
-    <AppBar position="absolute" sx={{ mt: 0, backgroundColor: "#ffffff" }}>
+    <AppBar position="sticky" sx={{ mt: 0,paddingTop:"0px", backgroundColor: "#ffffff",border: "none" }}>
       <Toolbar>
         <Typography variant="h6" color={"black"} sx={{
           flexGrow: 1,
           fontSize: "18px",
           fontFamily: "Signika Negative",
+          fontWeight:"bold"
         }}>
           El Asturiano
         </Typography>
