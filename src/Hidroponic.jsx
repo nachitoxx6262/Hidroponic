@@ -2,7 +2,6 @@ import  { useEffect, useState } from "react";
 import { Box,  Typography,Container, Paper, Grid } from "@mui/material";
 import { DateTime } from "luxon";
 import axios from "axios"
-
 const Hidroponic = ()=>{
               const [temperatura,setTemperatura] = useState("")
   const [humedad,setHumedad] = useState("")
@@ -66,7 +65,7 @@ const Hidroponic = ()=>{
           }}>
             <Typography style={{ fontFamily: 'Poiret One', fontWeight: "bold" }} variant="h4">Temperatura</Typography>
             <Typography style={{ fontFamily: 'Poiret One', fontWeight: "bold" }} component="p" variant="h4">
-              {temperatura} C°
+              🔥{temperatura} C°
             </Typography>
             <Typography variant="body1" style={{ fontFamily: 'Poiret One', fontWeight: "bold" }}>
               Ultima Actualización {createat.toFormat('yyyy-MM-dd HH:mm:ss')}
@@ -84,7 +83,7 @@ const Hidroponic = ()=>{
           }}>
             <Typography style={{ fontFamily: 'Poiret One', fontWeight: "bold" }} variant="h4">Humedad</Typography>
             <Typography style={{ fontFamily: 'Poiret One', fontWeight: "bold" }} component="p" variant="h4">
-              {humedad}%
+              💧{humedad}%
             </Typography>
             <Typography variant="body1" style={{ fontFamily: 'Poiret One', fontWeight: "bold" }}>
               Ultima Actualización {createat.toFormat('yyyy-MM-dd HH:mm:ss')}
