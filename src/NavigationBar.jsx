@@ -109,25 +109,25 @@ function NavigationBar() {
           }}
         >
           <MenuItem  sx={{
-              color:"#98FD59",
+              color:"black",
               fontFamily: "Signika Negative",
               fontWeight: "bold",
               borderRadius: 0,
             }} onClick={() => handleSectionClick("inicio")}>Inicio</MenuItem>
           <MenuItem  sx={{
-              color:"#98FD59",
+              color:"black",
               fontFamily: "Signika Negative",
               fontWeight: "bold",
               borderRadius: 0,
             }} onClick={() => handleSectionClick("sobre-nosotros")}>Sobre nosotros</MenuItem>
           <MenuItem sx={{
-              color:"#98FD59",
+              color:"black",
               fontFamily: "Signika Negative",
               fontWeight: "bold",
               borderRadius: 0,
             }} onClick={() => handleSectionClick("productos")}>Productos</MenuItem>
           <MenuItem sx={{
-              color:"#98FD59",
+              color:"black",
               fontFamily: "Signika Negative",
               fontWeight: "bold",
               borderRadius: 0,
