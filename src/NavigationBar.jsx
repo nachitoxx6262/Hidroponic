@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   AppBar,
   Toolbar,
@@ -108,10 +108,30 @@ function NavigationBar() {
             zIndex: 10,
           }}
         >
-          <MenuItem onClick={() => handleSectionClick("inicio")}>Inicio</MenuItem>
-          <MenuItem onClick={() => handleSectionClick("sobre-nosotros")}>Sobre nosotros</MenuItem>
-          <MenuItem onClick={() => handleSectionClick("productos")}>Productos</MenuItem>
-          <MenuItem onClick={() => handleSectionClick("invernadero")}>Invernadero</MenuItem>
+          <MenuItem  sx={{
+              color:"#98FD59",
+              fontFamily: "Signika Negative",
+              fontWeight: "bold",
+              borderRadius: 0,
+            }} onClick={() => handleSectionClick("inicio")}>Inicio</MenuItem>
+          <MenuItem  sx={{
+              color:"#98FD59",
+              fontFamily: "Signika Negative",
+              fontWeight: "bold",
+              borderRadius: 0,
+            }} onClick={() => handleSectionClick("sobre-nosotros")}>Sobre nosotros</MenuItem>
+          <MenuItem sx={{
+              color:"#98FD59",
+              fontFamily: "Signika Negative",
+              fontWeight: "bold",
+              borderRadius: 0,
+            }} onClick={() => handleSectionClick("productos")}>Productos</MenuItem>
+          <MenuItem sx={{
+              color:"#98FD59",
+              fontFamily: "Signika Negative",
+              fontWeight: "bold",
+              borderRadius: 0,
+            }} onClick={() => handleSectionClick("invernadero")}>Invernadero</MenuItem>
         </Menu>
       </Toolbar>
     </AppBar>
