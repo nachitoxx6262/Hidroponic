@@ -48,7 +48,7 @@ const Hidroponic = ()=>{
       justifyContent="center"
       alignItems="center"
       sx={{
-        backgroundImage: `url('./public/background.jpg')`,
+        backgroundImage: `url('/background.jpg')`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
