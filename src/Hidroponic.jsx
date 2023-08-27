@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { Box, Typography, Container, Paper, Grid } from "@mui/material";
 import { DateTime } from "luxon";
 import axios from "axios";
@@ -7,7 +7,7 @@ const Hidroponic = () => {
   const [temperatura, setTemperatura] = useState("");
   const [humedad, setHumedad] = useState("");
   const [createat, setCreateat] = useState(DateTime.local());
-  const apikey = "TU_API_KEY_AQUÍ";
+  const apikey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVzYnhvdHJlZXJyamFwZndiYWFwIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTI5MDIxNTUsImV4cCI6MjAwODQ3ODE1NX0.SUzX9mO4vZZ2xNmTD_6Y9MLzpFOHgfqxWKnWvMPdNsI";
 
   useEffect(() => {
     const fetchData = async () => {
@@ -115,7 +115,7 @@ const Hidroponic = () => {
           variant="h4"
           component="h1"
           textAlign="center"
-          style={{ fontFamily: "Architects Daughter" }}
+          style={{ fontFamily: "Signika Negative" }}
           gutterBottom
         >
           Temperatura y Humedad dentro del invernadero
@@ -136,13 +136,13 @@ const Hidroponic = () => {
               }}
             >
               <Typography
-                style={{ fontFamily: "Poiret One", fontWeight: "bold" }}
+                style={{ fontFamily: "Signika Negative", fontWeight: "bold" }}
                 variant="h4"
               >
                 Temperatura
               </Typography>
               <Typography
-                style={{ fontFamily: "Poiret One", fontWeight: "bold" }}
+                style={{ fontFamily: "Signika Negative" }}
                 component="p"
                 variant="h4"
               >
@@ -150,7 +150,7 @@ const Hidroponic = () => {
               </Typography>
               <Typography
                 variant="body1"
-                style={{ fontFamily: "Poiret One", fontWeight: "bold" }}
+                style={{ fontFamily: "Signika Negative" }}
               >
                 Ultima Actualización{" "}
                 {createat.toFormat("yyyy-MM-dd HH:mm:ss")}
@@ -169,13 +169,13 @@ const Hidroponic = () => {
               }}
             >
               <Typography
-                style={{ fontFamily: "Poiret One", fontWeight: "bold" }}
+                style={{ fontFamily: "Signika Negative", fontWeight: "bold" }}
                 variant="h4"
               >
                 Humedad
               </Typography>
               <Typography
-                style={{ fontFamily: "Poiret One", fontWeight: "bold" }}
+                style={{ fontFamily: "Signika Negative" }}
                 component="p"
                 variant="h4"
               >
@@ -183,7 +183,7 @@ const Hidroponic = () => {
               </Typography>
               <Typography
                 variant="body1"
-                style={{ fontFamily: "Poiret One", fontWeight: "bold" }}
+                style={{ fontFamily: "Signika Negative" }}
               >
                 Ultima Actualización{" "}
                 {createat.toFormat("yyyy-MM-dd HH:mm:ss")}
