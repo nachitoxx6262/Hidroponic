@@ -1,5 +1,5 @@
 
-import { Box, Typography, Container, Grid} from "@mui/material";
+import { Box, Typography, Container, Grid,Paper} from "@mui/material";
 import DataSensor from "./DataSensor";
 import 'animate.css';
 
@@ -120,6 +120,24 @@ const Hidroponic = () => {
           </Grid>
         </Grid>
       </Container>
+        <Paper elevation={7} sx={{ marginTop: '70px', padding: '10px'}} >
+      <Container>
+        <Box display={"flex"} flexDirection={"row"} alignItems={"center"} justifyContent={"flex-start"} margin={"10px"} >
+        <Typography variant="h4" fontFamily="Signika Negative" fontWeight="700" margin={"20px"}>
+        ¿Qué es la hidroponía? 
+              </Typography>
+            <Box width={"80px"} height={"80px"} backgroundColor="#B5EABC" borderRadius={"100%"} zIndex={"1"} display={"flex"} flexDirection={"column"} alignItems={"center"} justifyContent={"center"}>
+          <img src="./hidroplant.svg" width={"50px"} height={"50px"}/>
+            </Box>
+        </Box>
+        <Box margin={"20px"} >
+                <Typography variant="h6" fontFamily="Signika Negative" fontWeight="300">
+        Es un método revolucionario que nos permite cultivar plantas sin suelo, utilizando soluciones nutritivas y agua para nutrir las raíces directamente. Esto significa cultivos más eficientes, productos más frescos y un impacto ambiental reducido.
+Nuestras plantas crecen en un entorno controlado, donde la luz, la temperatura y los nutrientes se optimizan para garantizar un crecimiento saludable y vibrante. Desde hojas verdes exquisitas, nuestros cultivos hidropónicos son un tributo a nuestras raíces y a la tecnología en armonía.
+              </Typography>
+        </Box>
+      </Container>
+        </Paper>
       
       <DataSensor/>
     </Box>
