@@ -40,7 +40,7 @@ const DataSensor =()=>{
         <Container sx={{ marginTop: "20px" }} maxWidth="md">
         <Grid container spacing={2} justifyContent="center">
           <Grid item xs={12} sm={6} md={4}>
-            <Paper
+            <Paper elevation={8}
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -48,6 +48,7 @@ const DataSensor =()=>{
                 justifyContent: "center",
                 height: 120,
                 width: "100%",
+                padding:"20px"
               }}
             >
               <Typography
@@ -73,7 +74,7 @@ const DataSensor =()=>{
             </Paper>
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            <Paper
+            <Paper elevation={8}
               sx={{
                 display: "flex",
                 flexDirection: "column",
@@ -81,6 +82,7 @@ const DataSensor =()=>{
                 justifyContent: "center",
                 height: 120,
                 width: "100%",
+                padding:"20px"
               }}
             >
               <Typography
