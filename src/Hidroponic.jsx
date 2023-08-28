@@ -51,6 +51,8 @@ const Hidroponic = () => {
             position: "relative",
             zIndex: 1,
             fontWeight: "700",
+            textAlign: "center", // Alineación centrada
+            padding: "0 20px", // Espaciado lateral para dispositivos móviles
           }}
           gutterBottom
         >
