@@ -80,7 +80,7 @@ const Hidroponic = () => {
           <Grid item xs={12} sm={6} md={3}>
             <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center"  position="relative" sx={{zIndex: 2}}>
               <Box bgcolor="white" borderRadius="50px" width="90px" height="90px" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-                <img src="./plant.svg" width="45px" alt="Icono planta" className="animate__animated animate__bounce" />
+                <img src="./plant.svg" width="45px" alt="Icono planta"className="animate__animated animate__fadeInDown animate__duration-3s animate__delay-1s" />
               </Box>
               <Typography variant="h6" fontFamily="Signika Negative" fontWeight="400">
                 No necesita tierra
@@ -91,7 +91,7 @@ const Hidroponic = () => {
           <Grid item xs={12} sm={6} md={3}>
             <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" position="relative" sx={{zIndex: 2}}>
               <Box bgcolor="white" borderRadius="50px" width="90px" height="90px" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-                <img src="./water.svg" width="35px" alt="Icono planta" className="animate__animated animate__bounce" />
+                <img src="./water.svg" width="35px" alt="Icono planta" className="animate__animated animate__fadeInDown animate__duration-3s animate__delay-1s" />
               </Box>
               <Typography variant="h6" fontFamily="Signika Negative" fontWeight="400">
               Ahorro de agua
@@ -101,7 +101,7 @@ const Hidroponic = () => {
           <Grid item xs={12} sm={6} md={3}>
             <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" position="relative" sx={{zIndex: 2}}>
               <Box bgcolor="white" borderRadius="50px" width="90px" height="90px" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-                <img src="./sand.svg" width="30px" alt="Icono planta" className="animate__animated animate__bounce" />
+                <img src="./sand.svg" width="30px" alt="Icono planta" className="animate__animated animate__fadeInDown animate__duration-3s animate__delay-1s" />
               </Box>
               <Typography variant="h6" fontFamily="Signika Negative" fontWeight="400">
               x3-x4 más rapido
@@ -111,7 +111,7 @@ const Hidroponic = () => {
           <Grid item xs={12} sm={6} md={3}>
             <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" position="relative" sx={{zIndex: 2}}>
               <Box bgcolor="white" borderRadius="50px" width="90px" height="90px" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-                <img src="./chart.svg" width="40px" alt="Icono planta" className="animate__animated animate__bounce" />
+                <img src="./chart.svg" width="40px" alt="Icono planta" className="animate__animated animate__fadeInDown animate__duration-3s animate__delay-1s" />
               </Box>
               <Typography variant="h6" fontFamily="Signika Negative" fontWeight="400">
               80% rendimiento
