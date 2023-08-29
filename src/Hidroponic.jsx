@@ -347,6 +347,7 @@ const Hidroponic = () => {
                     fontFamily: "Signika Negative",
                     fontWeight: "400",
                   }}
+                  href="https://wa.me/message/U53F2PYWIO7YM1"
                 >
                   Comprar ahora
                 </Button>
@@ -366,6 +367,7 @@ const Hidroponic = () => {
                   fontFamily="Signika Negative"
                   fontWeight={700}
                   margin="20px"
+                  href="https://wa.me/message/U53F2PYWIO7YM1"
                 >
                   Rucula
                 </Typography>
