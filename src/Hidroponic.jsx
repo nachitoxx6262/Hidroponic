@@ -322,7 +322,7 @@ const Hidroponic = () => {
               </Box>
             </Box>
           </Box>
-          <Box display={"flex"} gap={"30px"}>
+          <Box display={"flex"} gap={"30px"} flexDirection={{ xs: "column", sm: "row" }}>
             <Paper elevation={5}>
               <Box
                 display={"flex"}
