@@ -7,7 +7,7 @@ import {
   Box,
   IconButton,
   Menu,
-  MenuItem,
+  MenuItem,Link
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -61,6 +61,8 @@ function NavigationBar() {
               borderRadius: 0,
             }}
             onClick={() => handleSectionClick("inicio")}
+            href="#inicio"
+
           >
             Inicio
           </Button>
@@ -85,6 +87,7 @@ function NavigationBar() {
               borderRadius: 0,
             }}
             onClick={() => handleSectionClick("invernadero")}
+            href="#invernadero"
           >
             Invernadero
           </Button>
@@ -96,6 +99,8 @@ function NavigationBar() {
                 borderRadius: 0,
               }}
               onClick={() => handleSectionClick("sobre-nosotros")}
+            href="#nosotros"
+
             >
               Sobre nosotros
             </Button>
@@ -116,26 +121,26 @@ function NavigationBar() {
               fontFamily: "Signika Negative",
               fontWeight: "bold",
               borderRadius: 0,
-            }} onClick={() => handleSectionClick("inicio")}>Inicio</MenuItem>
+            }} onClick={() => handleSectionClick("inicio")}><Link  href="#inicio" sx={{textDecoration:"none",color:"black"}}>Inicio</Link ></MenuItem>
           <MenuItem  sx={{
               color:"black",
               fontFamily: "Signika Negative",
               fontWeight: "bold",
               borderRadius: 0,
-            }} onClick={() => handleSectionClick("sobre-nosotros")}>Sobre nosotros</MenuItem>
+            }} onClick={() => handleSectionClick("sobre-nosotros")}><Link  href="#nosotros" sx={{textDecoration:"none",color:"black"}}>Sobre Nosotros</Link ></MenuItem>
           <MenuItem sx={{
               color:"black",
               fontFamily: "Signika Negative",
               fontWeight: "bold",
               borderRadius: 0,
               
-            }} href="#productos" onClick={() => handleSectionClick("productos")}>Productos</MenuItem>
+            }} onClick={() => handleSectionClick("productos")}><Link  href="#productos" sx={{textDecoration:"none",color:"black"}}>Productos</Link ></MenuItem>
           <MenuItem sx={{
               color:"black",
               fontFamily: "Signika Negative",
               fontWeight: "bold",
               borderRadius: 0,
-            }} onClick={() => handleSectionClick("invernadero")}>Invernadero</MenuItem>
+            }} onClick={() => handleSectionClick("invernadero")}><Link  href="#invernadero" sx={{textDecoration:"none",color:"black"}}>Invernadero</Link ></MenuItem>
         </Menu>
       </Toolbar>
     </AppBar>
