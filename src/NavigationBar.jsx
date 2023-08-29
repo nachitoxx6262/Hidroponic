@@ -66,17 +66,6 @@ function NavigationBar() {
           </Button>
           <Button
             sx={{
-              color: activeSection === "sobre-nosotros" ? "#98FD59" : "black",
-              fontFamily: "Signika Negative",
-              fontWeight: "bold",
-              borderRadius: 0,
-            }}
-            onClick={() => handleSectionClick("sobre-nosotros")}
-          >
-            Sobre nosotros
-          </Button>
-          <Button
-            sx={{
               color: activeSection === "productos" ? "#98FD59" : "black",
               fontFamily: "Signika Negative",
               fontWeight: "bold",
@@ -97,6 +86,17 @@ function NavigationBar() {
           >
             Invernadero
           </Button>
+            <Button
+              sx={{
+                color: activeSection === "sobre-nosotros" ? "#98FD59" : "black",
+                fontFamily: "Signika Negative",
+                fontWeight: "bold",
+                borderRadius: 0,
+              }}
+              onClick={() => handleSectionClick("sobre-nosotros")}
+            >
+              Sobre nosotros
+            </Button>
         </Box>
 
         {/* Menú desplegable en dispositivos móviles */}

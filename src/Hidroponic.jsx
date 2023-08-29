@@ -1,4 +1,4 @@
-import { Box, Typography, Container, Grid, Paper } from "@mui/material";
+import { Box, Typography, Container, Grid, Paper, Button } from "@mui/material";
 import DataSensor from "./DataSensor";
 import "animate.css";
 
@@ -225,65 +225,165 @@ const Hidroponic = () => {
         </Grid>
       </Container>
       <Paper elevation={7} sx={{ marginTop: "70px", padding: "10px" }}>
-  <Container>
-    <Box display="flex" flexDirection={{ xs: "column", sm: "row" }}>
-      <Box>
+        <Container>
+          <Box display="flex" flexDirection={{ xs: "column", sm: "row" }}>
+            <Box>
+              <Box
+                display="flex"
+                flexDirection="row"
+                alignItems="center"
+                justifyContent="flex-start"
+                margin="10px"
+              >
+                <Typography
+                  variant="h4"
+                  fontFamily="Signika Negative"
+                  fontWeight={700}
+                  margin="20px"
+                >
+                  ¿Qué es la hidroponía?
+                </Typography>
+                <Box
+                  width="80px"
+                  height="80px"
+                  backgroundColor="#B5EABC"
+                  borderRadius="100%"
+                  zIndex="1"
+                  display="flex"
+                  flexDirection="column"
+                  alignItems="center"
+                  justifyContent="center"
+                >
+                  <img src="./hidroplant.svg" width="50px" height="50px" />
+                </Box>
+              </Box>
+              <Box margin="20px">
+                <Typography
+                  variant="h6"
+                  fontFamily="Signika Negative"
+                  fontWeight={300}
+                >
+                  Es un método revolucionario que nos permite cultivar plantas
+                  sin suelo, utilizando soluciones nutritivas y agua para nutrir
+                  las raíces directamente. Esto significa cultivos más
+                  eficientes, productos más frescos y un impacto ambiental
+                  reducido.
+                </Typography>
+              </Box>
+            </Box>
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems={{ xs: "center", sm: "flex-start" }}
+              marginLeft={{ xs: 0, sm: "20px" }}
+              padding={"10px"}
+            >
+              <img src="./hidroponia.svg" width="300px" />
+            </Box>
+          </Box>
+        </Container>
+      </Paper>
+
+      <Container>
         <Box
           display="flex"
-          flexDirection="row"
-          alignItems="center"
-          justifyContent="flex-start"
-          margin="10px"
+          flexDirection={{ xs: "column", sm: "column" }}
+          justifyContent={"center"}
+          alignItems={"center"}
         >
-          <Typography
-            variant="h4"
-            fontFamily="Signika Negative"
-            fontWeight={700}
-            margin="20px"
-          >
-            ¿Qué es la hidroponía?
-          </Typography>
-          <Box
-            width="80px"
-            height="80px"
-            backgroundColor="#B5EABC"
-            borderRadius="100%"
-            zIndex="1"
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <img src="./hidroplant.svg" width="50px" height="50px" />
+          <Box>
+            <Box
+              display="flex"
+              flexDirection="row"
+              alignItems="center"
+              justifyContent="flex-start"
+              margin="10px"
+            >
+              <Typography
+                variant="h4"
+                fontFamily="Signika Negative"
+                fontWeight={700}
+                margin="20px"
+              >
+                Nuestros Productos
+              </Typography>
+              <Box
+                width="80px"
+                height="80px"
+                backgroundColor="#B5EABC"
+                borderRadius="100%"
+                zIndex="1"
+                display="flex"
+                flexDirection="column"
+                alignItems="center"
+                justifyContent="center"
+              >
+                <img src="./hidroplant.svg" width="50px" height="50px" />
+              </Box>
+            </Box>
+          </Box>
+          <Box display={"flex"} gap={"30px"}>
+            <Paper elevation={5}>
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                padding={"10px"}
+              >
+                <img src="./lechuga.svg" width="300px" height="300px" />
+                <Typography
+                  variant="h4"
+                  fontFamily="Signika Negative"
+                  fontWeight={700}
+                  margin="20px"
+                >
+                  Lechuga de hoja
+                </Typography>
+                <Button
+                  sx={{
+                    backgroundColor: "green",
+                    color: "white",
+                    fontFamily: "Signika Negative",
+                    fontWeight: "400",
+                  }}
+                >
+                  Comprar ahora
+                </Button>
+              </Box>
+            </Paper>
+            <Paper elevation={5}>
+              <Box
+                display={"flex"}
+                flexDirection={"column"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                padding={"10px"}
+              >
+                <img src="./arugula.svg" width="300px" height="300px" />
+                <Typography
+                  variant="h4"
+                  fontFamily="Signika Negative"
+                  fontWeight={700}
+                  margin="20px"
+                >
+                  Rucula
+                </Typography>
+                <Button
+                  sx={{
+                    backgroundColor: "green",
+                    color: "white",
+                    fontFamily: "Signika Negative",
+                    fontWeight: "400",
+                  }}
+                >
+                  Comprar ahora
+                </Button>
+              </Box>
+            </Paper>
           </Box>
         </Box>
-        <Box margin="20px">
-          <Typography
-            variant="h6"
-            fontFamily="Signika Negative"
-            fontWeight={300}
-          >
-            Es un método revolucionario que nos permite cultivar plantas sin
-            suelo, utilizando soluciones nutritivas y agua para nutrir las raíces
-            directamente. Esto significa cultivos más eficientes, productos más
-            frescos y un impacto ambiental reducido. Nuestras plantas crecen en un
-            entorno controlado, donde la luz, la temperatura y los nutrientes se
-            optimizan para garantizar un crecimiento saludable y vibrante.
-          </Typography>
-        </Box>
-      </Box>
-      <Box
-        display="flex"
-        justifyContent="center"
-        alignItems={{ xs: "center", sm: "flex-start" }}
-        marginLeft={{ xs: 0, sm: "20px" }}
-      >
-        <img src="./hidroponic.svg" width="500px"  />
-      </Box>
-    </Box>
-  </Container>
-</Paper>
-
+      </Container>
 
       <DataSensor />
     </Box>
