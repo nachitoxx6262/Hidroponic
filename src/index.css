@@ -9,11 +9,13 @@ body,
   width: 100%;
   font-family: "Source Sans Pro", sans-serif;
   background-color: #ffffff;
+  scroll-behavior: smooth;
 }
 
 .app {
   display: flex;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {

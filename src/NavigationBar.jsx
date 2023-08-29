@@ -72,6 +72,8 @@ function NavigationBar() {
               borderRadius: 0,
             }}
             onClick={() => handleSectionClick("productos")}
+            href="#productos"
+            
           >
             Productos
           </Button>
@@ -126,7 +128,8 @@ function NavigationBar() {
               fontFamily: "Signika Negative",
               fontWeight: "bold",
               borderRadius: 0,
-            }} onClick={() => handleSectionClick("productos")}>Productos</MenuItem>
+              
+            }} href="#productos" onClick={() => handleSectionClick("productos")}>Productos</MenuItem>
           <MenuItem sx={{
               color:"black",
               fontFamily: "Signika Negative",

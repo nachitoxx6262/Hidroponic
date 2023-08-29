@@ -291,7 +291,7 @@ const Hidroponic = () => {
           justifyContent={"center"}
           alignItems={"center"}
         >
-          <Box>
+          <Box id="productos">
             <Box
               display="flex"
               flexDirection="row"
