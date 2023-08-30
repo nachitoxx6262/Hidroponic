@@ -13,7 +13,7 @@ const DataSensor =()=>{
       const fetchData = async () => {
         try {
           const response = await axios.get(
-            "https://usbxotreerrjapfwbaap.supabase.co/rest/v1/sensor_data?select=*",
+            "https://usbxotreerrjapfwbaap.supabase.co/rest/v1/sensor_data?order=created_at.desc&limit=1",
             {
               headers: { "apikey": `${apikey}` },
             }
