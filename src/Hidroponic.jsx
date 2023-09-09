@@ -13,7 +13,7 @@ const Hidroponic = () => {
       }}
     >
       <Box
-      id="inicio"
+        id="inicio"
         display="flex"
         flexDirection="column"
         justifyContent="center"
@@ -42,7 +42,6 @@ const Hidroponic = () => {
         />
 
         <Typography
-        
           color="white"
           variant="h3"
           component="h1"
@@ -392,8 +391,82 @@ const Hidroponic = () => {
           </Box>
         </Box>
       </Container>
-
-      <DataSensor />
+      <Container>
+        <Paper elevation={7} sx={{ marginTop: "70px", padding: "10px" }}>
+          <Container>
+            <Box display="flex" flexDirection={{ xs: "column", sm: "row" }}>
+              <Box>
+                <Box
+                  display="flex"
+                  flexDirection="row"
+                  alignItems="center"
+                  justifyContent="flex-start"
+                  margin="10px"
+                >
+                  <Typography
+                    variant="h4"
+                    fontFamily="Signika Negative"
+                    fontWeight={700}
+                    margin="20px"
+                  >
+                    Nuestro Invernadero
+                  </Typography>
+                  <Box
+                    width="80px"
+                    height="80px"
+                    backgroundColor="#B5EABC"
+                    borderRadius="100%"
+                    zIndex="1"
+                    display="flex"
+                    flexDirection="column"
+                    alignItems="center"
+                    justifyContent="center"
+                  >
+                    <img src="./hidroplant.svg" width="50px" height="50px" />
+                  </Box>
+                </Box>
+                <Box margin="20px">
+                  <Typography
+                    variant="h6"
+                    fontFamily="Signika Negative"
+                    fontWeight={300}
+                  >
+                    Nos preocupamos por ofrecer a nuestros clientes los mejores
+                    productos, y eso incluye nuestras verduras hidropónicas. Por
+                    eso, utilizamos control de temperatura y humedad para
+                    garantizar que nuestras plantas reciban las condiciones
+                    óptimas para su crecimiento y desarrollo. El control de
+                    temperatura y humedad es esencial para el cultivo
+                    hidropónico porque las plantas necesitan condiciones
+                    específicas para crecer y desarrollarse correctamente. En
+                    nuestros invernaderos, utilizamos sensores para medir la
+                    temperatura y la humedad del aire. Estos datos se envían a
+                    un controlador, que utiliza algoritmos para ajustar los
+                    sistemas de calefacción, ventilación y humidificación. De
+                    esta manera, podemos asegurarnos de que nuestras plantas
+                    siempre tengan las condiciones óptimas. Gracias a este
+                    sistema de control, podemos cultivar verduras hidropónicas
+                    de alta calidad durante todo el año, independientemente de
+                    las condiciones climáticas exteriores. Esto nos permite
+                    ofrecer a nuestros clientes productos frescos y sabrosos,
+                    disponibles en cualquier época del año.
+                  </Typography>
+                </Box>
+              </Box>
+              <Box
+                display="flex"
+                justifyContent="center"
+                alignItems={{ xs: "center", sm: "flex-start" }}
+                marginLeft={{ xs: 0, sm: "20px" }}
+                padding={"10px"}
+              >
+                <img src="./invernadero.svg" width="500px" />
+              </Box>
+            </Box>
+          </Container>
+          <DataSensor />
+        </Paper>
+      </Container>
     </Box>
   );
 };
